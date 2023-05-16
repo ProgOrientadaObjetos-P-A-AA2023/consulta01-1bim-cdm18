@@ -8,21 +8,17 @@ import mis_clases
 # crear
 
 carro1 = mis_clases.Auto(6300, "Lujo", 145500, "Mercedez Benz")
-
-
 # Presentar objeto; usar el método __st__
 print (carro1)
 
 # objeto 02
 # crear ingresando valores por teclado
 
-marca = input (str("Ingrese la marca del avion: "))
-aerolinea = input (str("Ingrese la aerolinea del avion: "))
-tipo = input (str("Ingrese el tipo de avion: "))
-precio =  float (input("Ingrese el precio aproximado del avion: "))
+cilindraje = int (input (("Ingrese el cilindraje del carro (en cc): ")))
+gama = input (str("Ingrese la gama del carro: "))
+marca = input (str("Ingrese la marca del carro: "))
+precio =  float (input("Ingrese el precio aproximado del carro: "))
 
-
-avion1 = mis_clases.Avion(marca, aerolinea, tipo, precio)
-
+carro2 = mis_clases.Auto(cilindraje, gama, precio, marca)
 # Presentar objeto; usar el método __st__
-print (avion1)
+print (carro2)
